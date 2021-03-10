@@ -1,0 +1,162 @@
+@font-face{
+  font-family: comicFont;
+  src: url("font/kalam.ttf");
+}
+
+body{
+  height: 80%;
+  width: 100%;
+  overflow-x: hidden;
+  margin-left: 0%;
+  margin-top: 0%;
+  background-color: white;
+  position: relative;
+}
+
+
+#main1{
+  width:80%;
+  height:100%;
+  background: white;
+  margin-left: 10%;
+}
+
+/*#home{
+  text-align: right;
+}*/
+
+#nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  left: 7%;
+  margin-top: -4%;
+  position: relative;
+  font-family: comicFont;
+  font-weight: normal;
+  font-size: 130%;
+  /*background-color: #0d97ac;*/
+}
+
+.logo{
+  position: relative;
+  display: inline-block;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+li a/*, .dropbtn*/{
+  float: left;
+  display: block;
+  color: #494951;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+hr.hr1{
+  border-style: dashed;
+  color: #c8c8cd;
+  margin-top: 0%;
+}
+
+/*For the header of each page eg. About, "this page is created by..."*/
+.text1{
+  text-align: center;
+  color: #494951;
+  font-family: comicFont;
+  margin-top: -0.5%;
+}
+
+.text2{
+  text-align: center;
+  color: #494951;
+  font-family: comicFont;
+  position: relative;
+  display: inline-block;
+
+}
+
+.small{
+  font-size: 110%;
+}
+
+.medium{
+  font-size: 150%;
+}
+
+.big{
+  font-size: 200%;
+}
+
+.largeBox{
+  width: 80%;
+  position: relative;
+  height: 70%;
+  background-color: white;
+  margin-left: 10%;
+}
+
+.box1{
+
+  width: 28.3%;
+  background-color: #ffebcd;
+  float: left;
+}
+
+.box2{
+
+  width: 28.3%;
+  background-color: #bbe7f5;
+  float: left;
+  margin-left: 7.5%;
+}
+
+.box3{
+
+  width: 28.3%;
+  background-color: #ffebcd;
+  float: right;
+}
+
+/*Preview of comic, taken from w3School */
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.comic_preview_img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .comic_preview_img {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.comic_title {
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  padding: 16px 32px;
+}
